@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Remote Interview Practice Portal</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <i class="fas fa-laptop-code"></i> REMOTE INTERVIEW PRACTICE PORTAL 
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="practice.html">Practice</a></li> 
+                <li><a href="mock.html">Mock Interview</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn-login" id="loginBtn">Login/Sign Up</button> 
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="popup-overlay" id="interviewPopup">
+            <div class="popup-card">
+                <div class="popup-header">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Upcoming Company Interview</span> 
+                </div>
+                <div class="popup-body">
+                    <h3>Company: Amazon</h3> 
+                    <p><strong>Role:</strong> Software Developer</p> 
+                    <p><strong>Date:</strong> 18 March | <strong>Time:</strong> 10:00 AM</p> 
+                    <p class="hint">Prepare well and review your practice questions.</p> 
+                </div>
+                <div class="popup-footer">
+                    <button class="btn-primary" onclick="location.href='practice.html'">Start Practice</button> 
+                    <button class="btn-secondary" id="closePopup">View Details</button> 
+                </div>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Master your <span>interview skills</span> and build confidence.</h1> 
+                <p>Prepare for your dream job with AI-powered feedback and real-time simulations.</p>
+                <div class="hero-btns">
+                    <button class="btn-primary-lg" onclick="location.href='mock.html'">Take Mock Interview</button> 
+                    <button class="btn-secondary-lg" onclick="location.href='practice.html'">Start Practicing</button> 
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="features-grid">
+                    <div class="feature-item"><i class="fas fa-video"></i> Video Practice</div> 
+                    <div class="feature-item"><i class="fas fa-brain"></i> AI Feedback</div> 
+                    <div class="feature-item"><i class="fas fa-chart-line"></i> Track Improvement</div> 
+                    <div class="feature-item"><i class="fas fa-lightbulb"></i> Smart Suggestions</div> 
+                </div>
+            </div>
+        </section>
+
+        <section class="interview-types">
+            <h2>Choose Your Domain</h2> 
+            <div class="type-grid">
+                <div class="type-card"><i class="fas fa-code"></i> Technical</div> 
+                <div class="type-card"><i class="fas fa-users"></i> HR</div> 
+                <div class="type-card"><i class="fas fa-user-md"></i> Healthcare</div> 
+                <div class="type-card"><i class="fas fa-chalkboard-teacher"></i> Teaching</div> 
+                <div class="type-card"><i class="fas fa-university"></i> Government</div> 
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4> 
+                <p>Helping candidates ace their interviews since 2026.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Teams</a> 
+                <a href="#">Privacy Policy</a> 
+                <a href="#">Help Center</a> 
+                <a href="#">Contact</a> 
+            </div>
+        </div>
+        <p class="copyright">@2026 Remote Interview Practice Portal</p> 
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
